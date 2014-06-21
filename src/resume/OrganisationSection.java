@@ -8,4 +8,13 @@ import java.util.Collection;
 public class OrganisationSection extends Section {
 
     Collection<Organisation> organisations;
+
+    public OrganisationSection(String type, Collection<Organisation> organisations) {
+        super(type);
+        this.organisations = organisations;
+    }
+
+    public void setOrganisation(Organisation organisation) {
+        this.organisations.add(organisation);
+    }
 }
